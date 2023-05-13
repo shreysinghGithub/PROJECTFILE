@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction System</title>
+    <link rel="stylesheet" href="prediction.css">
+</head>
+<body>
+    <div class="wel" id="welcome">
+        <h1>Welcome to Laptop Price Prediction 
+        Web Application 
+    </h1>
+    </div>
+    <div class="usage" id="lp1">
+    <h4>Laptop usage</h4>
+    <input type="text" list="Laptop usage"
+    placeholder="Laptop usage" id="lp">
+    <datalist id="Laptop usage">
+        <option value="Business">Business</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Multimedia">Multimedia</option>
+        <option value="Student">Student</option> 
+    </datalist></div>
+    <div  id="hs">
+    <h4>Human Interface Input</h4>
+    <input type="text" list="Human Interface Input"
+    placeholder="Human Interface Input">
+    <datalist id="Human Interface Input">
+        <option value="Touch Bar">Touch Bar</option>
+        <option value="Touchscreen">Touchscreen</option>
+        <option value="Touchscreen with Stylus support">Touchscreen with Stylus support</option>
+        
+    </datalist>
+</div>
+<div id="Sc">
+    <h4>Screen Resolution</h4>
+    <input type="text" list="Screen Resolution"
+    placeholder="Screen Resolution">
+    <datalist id="Screen Resolution">
+        <option value="1024 x 768 pixel">1024 x 768 pixel</option>
+        <option value="1280 x 720 pixel">1280 x 720 pixel</option>
+        <option value="1280 x 800 pixel">1280 x 800 pixel</option>
+        <option value="1366 x 768 pixel">1366 x 768 pixel</option>
+        <option value="1920 x 1080 pixel">1920 x 1080 pixel</option>
+        <option value="2256 x 1504 pixel">2256 x 1504 pixel</option>
+        <option value="2560 x 1440 pixel">2560 x 1440 pixel</option>
+        <option value="2560 x 1600 pixel"> 2560 x 1600 pixel</option>
+        <option value="2880 x 1800 pixel">2880 x 1800 pixel</option>
+        <option value="3840 x 2160 pixel">3840 x 2160 pixel</option>
+    </datalist></div>
+    <div id="ds">
+    <h4>Display Size</h4>
+    <input type="text" list="Display Size"
+    placeholder="Display Size">
+    <datalist id="Display Size">
+        <option value="Upto 10 inch">Upto 10 inch</option>
+        <option value="11 -12 inch">11 -12 inch</option>
+        <option value="13-14 inch">13-14 inch</option>
+        <option value="15 - 16 inch">15 - 16 inch</option> 
+        <option value="17 & above">17 & above</option> 
+    </datalist></div>
+    <div id="Dt">
+     <h4>Display type</h4>
+    <input type="text" list="Display type"
+    placeholder="Display type">
+    <datalist id="Display type">
+        <option value="AMOLED">AMOLED</option>
+        <option value="LCD">LCD</option>
+        <option value="LED">LED</option>
+        <option value="OLED">OLED</option> 
+    </datalist></div>
+    <div id="cp">
+    <h4>CPU</h4>
+    <input type="text" list="CPU"
+    placeholder="CPU">
+    <datalist id="CPU">
+        <option value="Single-Core">Single-Core</option>
+        <option value="Dual-Core">Dual-Core</option>
+        <option value="Quad-Core">Quad-Core</option>
+        <option value="Hexa-Core">Hexa-Core</option>
+        <option value="Octa-Core">Octa-Core</option>
+        <option value="Deca-Core">Deca-Core</option>
+     </datalist></div>
+     <div id="man">
+     <h4> Laptop CPU Manufacturer</h4>
+    <input type="text" list="Laptop CPU Manufacturer"
+    placeholder="Laptop CPU Manufacturer">
+    <datalist id="Laptop CPU Manufacturer">
+        <option value="AMD">AMD</option>
+        <option value="Apple">Apple</option>
+        <option value="Intel">Intel</option>
+        <option value="NVIDIA">NVIDIA</option>
+        <option value="Qualcomn">Qualcomn</option>
+        <option value="VIA">VIA</option>
+     </datalist></div>
+     <div id="hd">
+    <h4>HDD(in GB)</h4>
+    <input type="text" list="HDD(in GB)"
+    placeholder="HDD(in GB)">
+    <datalist id="HDD(in GB)">
+        <option value="Upto - 159 GB">Upto - 159 GB</option>
+        <option value="160 - 249 GB">160 - 249 GB</option>
+        <option value="250 - 499 GB">250 - 499 GB</option>
+        <option value="500 - 999 GB">500 - 999 GB</option>
+        <option value="1 TB & above ">1 TB & above</option>
+    </datalist>  </div>
+    <div id="sd">
+    <h4>SDD(in GB)</h4>
+    <input type="text" list="SDD(in GB)"
+    placeholder="SDD(in GB)">
+    <datalist id="SDD(in GB)">
+        <option value="Upto - 159 GB">Upto - 159 GB</option>
+        <option value="160 - 249 GB">160 - 249 GB</option>
+        <option value="250 - 499 GB">250 - 499 GB</option>
+        <option value="500 - 999 GB">500 - 999 GB</option>
+        <option value="1 TB & above ">1 TB & above</option>
+    </datalist> </div>
+    <div id="gp">
+    <h4>GPU</h4>
+    <input type="text" list="GPU"
+    placeholder="GPU">
+    <datalist id="GPU">
+        <option value="Intel Iris Xe Graphics">Intel Iris Xe Graphics</option>
+        <option value="NVIDIA GeForce GTX 1650">NVIDIA GeForce GTX 1650</option>
+        <option value="NVIDIA GeForce RTX 3050">NVIDIA GeForce RTX 3050</option>
+        <option value="NVIDIA GeForce RTX 3050 Ti">NVIDIA GeForce RTX 3050 Ti</option>
+        <option value="NVIDIA GeForce RTX 3060">NVIDIA GeForce RTX 3060</option>
+        <option value="AMD Radeon Graphics 530">AMD Radeon Graphics 530</option>
+        <option value="AMD Radeon R3">AMD Radeon R3</option>
+        <option value="AMD Radeon R4">AMD Radeon R4</option>
+        <option value="AMD Radeon Vega 3">AMD Radeon Vega 3</option>
+        <option value="AMD Radeon Vega 7">AMD Radeon Vega 7</option>
+        <option value="AMD Radeon Vega 8">AMD Radeon Vega 8</option>
+        <option value="Intel HD Graphics 3000">Intel HD Graphics 3000</option>
+        <option value="Intel HD Graphics 4000">Intel HD Graphics 4000</option>
+        <option value="Intel HD Graphics 4400">Intel HD Graphics 4400</option>
+        <option value="Intel HD Graphics 500">Intel HD Graphics 500</option>
+        <option value="Intel HD Graphics 520">Intel HD Graphics 520</option>
+        <option value="Intel HD Graphics 620">Intel HD Graphics 620</option>
+        <option value="Intel HD Graphics 630">Intel HD Graphics 630</option>
+        <option value="Intel UHD Graphics">Intel UHD Graphics</option>
+        <option value="Intel UHD Graphics 600">Intel UHD Graphics 600</option>
+        <option value="Intel UHD Graphics 620">Intel UHD Graphics 620</option>
+        <option value="Microsoft SQ1 Adreno 685 GPU">Microsoft SQ1 Adreno 685 GPU</option>
+        <option value="NVIDIA GeForce MX350">NVIDIA GeForce MX350</option>
+        <option value="NVIDIA GeForce MX450">NVIDIA GeForce MX450</option>
+        <option value="NVIDIA GeForce RTX 2050">NVIDIA GeForce RTX 2050</option>
+    </datalist></div>
+    <div id="ra">
+    <h4>RAM</h4>
+     <input type="text" list="RAM"
+     placeholder="RAM">
+     <datalist id="RAM">
+         <option value="4 GB">4 GB</option>
+         <option value="8 GB">8 GB</option>
+         <option value="16 GB">16 GB</option>
+         <option value="32 GB">32 GB</option>
+         <option value="64 GB">64 GB</option>
+    </datalist></div>
+    <div id="os">
+     <h4>Operating System</h4>
+    <input type="text" list="Operating System"
+    placeholder="Operating System ">
+    <datalist id="Operating System">
+        <option value=" Windows 11 Home"> Windows 11 Home</option>
+        <option value="Windows 11 Pro">Windows 11 Pro</option>
+        <option value="Windows 11 in S mode">Windows 11 in S mode</option>
+        <option value="Windows 10 Home">Windows 10 Home</option>
+        <option value="Windows 10 Pro">Windows 10 Pro</option>
+        <option value="Windows 10 in S mode">Windows 10 in S mode</option>
+        <option value="Mac OS">Mac OS</option>
+        <option value="Chrome">Chrome</option>
+        <option value="DOS">DOS</option>
+        <option value="Linux">Linux</option>
+    </datalist> </div> 
+    <div id="hi">
+    <h4>Hardware Interface</h4>
+    <input type="text" list="Hardware Interface"
+    placeholder="Hardware Interface">
+    <datalist id="Hardware Interface">
+       <option value="3.5mm Audio">3.5mm Audio</option>
+       <option value="Bluetooth">Bluetooth</option>
+       <option value="Bluetooth 5">Bluetooth 5</option>
+       <option value="D-Sub">D-Sub</option>
+       <option value="DisplayPort">DisplayPort</option>
+       <option value="Ethernet"> Ethernet</option>
+       <option value="HDMI">HDMI</option>
+       <option value="Headphone">Headphone</option>
+       <option value="Media Card">Media Card</option>
+       <option value="Memory Stick">Memory Stick</option>
+       <option value="Memory Stick PRO">Memory Stick PRO</option>
+       <option value="MicroSD">MicroSD</option>
+       <option value="Mini-DisplayPort">Mini-DisplayPort</option>
+       <option value="PCI Express 3.0">PCI Express 3.0 </option>
+       <option value="PCI Express 4.0">PCI Express 4.0</option>
+       <option value="SDHC"> SDHC</option>
+       <option value="SDXC">SDXC</option>
+       <option value=" Secure Digital Card">Secure Digital Card</option>
+       <option value="Solid State Drive"> Solid State Drive</option>
+       <option value="Thunderbolt">Thunderbolt</option>
+       <option value=" hunderbolt 4">Thunderbolt 4</option>
+       <option value="USB">USB</option>
+       <option value="USB 2.0 Type A">USB 2.0 Type A</option>
+       <option value="USB 3.0 Type A">USB 3.0 Type A</option>
+       <option value="USB 3.0 Type C">USB 3.0 Type C</option>
+       <option value="USB 3.2 Gen 1">USB 3.2 Gen 1</option>
+       <option value="USB 3.2 Gen 2">USB 3.2 Gen 2</option>
+       <option value="VGA">VGA</option>
+    </datalist> </div>
+    <div id="s"><input type="submit" value="Predict Price" class = " submit"id="submit"></div> 
+    
+    
+</body>
+</html>
