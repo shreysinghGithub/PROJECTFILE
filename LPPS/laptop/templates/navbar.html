@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm navbar-light" >
+    <div class="container-fluid p-2">
+        
+            <ul class="navbar-nav">
+                {% if session.isauth %}
+                <li class="nav-item">
+                    <a class="nav-link " href="/profile">
+                        <i class="fas fa-user px-2"></i>
+                        {{session.user_name}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+                {% else %}
+                <li class=" nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>

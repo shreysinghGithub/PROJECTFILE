@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+    
+</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row my-3">
+        <div class="col-md-8 mx-auto">
+            <form method="post" class="card">
+                <div class="card-body">
+                    <div class="form-floating mb-3">
+                        <input
+                        type="number"
+                        class="form-control" name="ram" id="ram" placeholder="Enter rame size in GB">
+                        <label for="ram">RAM</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                        type="number"
+                        class="form-control" name="hdd" id="hdd" placeholder="Enter HDD size">
+                        <label for="hdd">HDD</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                        type="number"
+                        class="form-control" name="ssd" id="ssd" placeholder="Enter SSD space">
+                        <label for="ssd">SSD</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                        type="number"
+                        class="form-control" name="weight" id="weight" placeholder="Enter weight in Kg">
+                        <label for="weight">Weight</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                        type="number"
+                        class="form-control" name="ppi" id="ppi" placeholder="Enter Display PPI value">
+                        <label for="ppi">Display PPI</label>
+                    </div>
+                    <div class="form-check">
+                        <div><b>Screen Display Type</b></div>
+                        <input class="form-check-input" type="radio" name="ips" id="is_ips" value="1">
+                        <label class="form-check-label" for="is_ips">
+                            Display is IPS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ips" id="is_not_ips" value="0" checked>
+                        <label class="form-check-label" for="is_not_ips">
+                            Display is not IPS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <div><b>Touchscreen Option</b></div>
+                        <input class="form-check-input" type="radio" name="touchscreen" id="is_touchscreen" value="1">
+                        <label class="form-check-label" for="is_touchscreen">
+                            Touchscreen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="touchscreen" id="not_touchscreen" value="0" checked >
+                        <label class="form-check-label" for="not_touchscreen">
+                            Not Touchscreen
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="os" class="form-label">Operating system</label>
+                        <select class="form-select form-select-lg" name="os" id="os">
+                            <option selected disabled>Select OS</option>
+                            {% for name in oses %}
+                            <option>{{name}}</option>
+                            {% endfor %} 
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <select class="form-select form-select-lg" name="company" id="company">
+                            <option selected disabled>Select company</option>
+                            {% for name in companies %}
+                            <option>{{name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="types" class="form-label">Types</label>
+                        <select class="form-select form-select-lg" name="typename" id="types">
+                            <option selected disabled>Select Types</option>
+                            {% for name in types %}
+                            <option>{{name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gpu" class="form-label">GPU</label>
+                        <select class="form-select form-select-lg" name="gpu" id="gpu">
+                            <option selected disabled>Select GPU</option>
+                            {% for name in gpu_brands %}
+                            <option>{{name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Brand</label>
+                        <select class="form-select form-select-lg" name="brand" id="brand">
+                            <option selected disabled>Select Brand</option>
+                            {% for name in cpu_brands %}
+                            <option>{{name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-dark">Predict Laptop Price</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+    
+</script>
+{% endblock %}

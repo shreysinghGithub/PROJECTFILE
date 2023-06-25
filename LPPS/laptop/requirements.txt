@@ -1,0 +1,7 @@
+flask
+pandas
+plotly
+seaborn
+scikit-learn
+joblib
+sqlalchemy

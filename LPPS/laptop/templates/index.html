@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block css %}
+<style>
+   
+    .header{
+        height: 100vh;
+        background-image: url('static/images/image2.jpg') !important;
+        background-size: cover;
+        background-position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .header .container{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .container .mx-auto{
+        text-align: center;
+        color: white;
+    }
+    .header .container .mx-auto h1{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        padding:0;
+    }
+</style>
+
+{% endblock %}
+{% block content %}
+<header class="header">
+    <div class="container">
+        <div class="mx-auto">
+            <h1>Laptop Price Prediction</h1>
+            <a href="/predict"><button>START PREDICTION</button></a>
+        </div>
+    </div>
+</header>
+{% endblock %}
+{% block js %}{% endblock %}
